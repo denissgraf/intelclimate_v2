@@ -1,0 +1,21 @@
+//colors
+$colors: (
+  'white': #ffffff,
+  'blue': #2db2c0,
+  'lightBlue': #48cad6,
+  'black': #2b2f32,
+  'darkestGray': #777e89,
+  'darkGray': #999999,
+  'gray': #e7e7e7,
+  'lightGray': #f0f0f0,
+  'lightestGray': #f4f5f7,
+  'red': #c02b2b,
+  'lightRed': #e96060,
+);
+
+// Данная функция получает цвет по названию.
+// Например background: getColor('black') !!!!
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}

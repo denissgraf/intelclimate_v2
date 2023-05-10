@@ -1,0 +1,20 @@
+@for $i from 1 through length($medias) {
+  @if $i == 1 {
+    @media screen and (min-width: nth($medias, $i) + 1) {
+      .container {
+        max-width: nth($container-max-width, $i);
+        margin-left: nth($container-margin, $i);
+        margin-right: nth($container-margin, $i);
+      }
+    }
+  }
+  @media screen and (max-width: nth($medias, $i)) {
+    .container {
+      max-width: nth($container-max-width, $i);
+      margin-left: nth($container-margin, $i);
+      margin-right: nth($container-margin, $i);
+    }
+
+  }
+
+}

@@ -1,0 +1,23 @@
+@import "_core/_colors";
+@import "_core/_variables";
+@import "_core/_containers";
+@import "_core/_mixins";
+@import "_core/_buttons";
+@import "_core/_fonts";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+html {
+  border: 0;
+  background: getColor('white');
+  top: 0;
+  left: 0;
+}

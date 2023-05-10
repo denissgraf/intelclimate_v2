@@ -1,0 +1,62 @@
+.dBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include transition(all, .5s);
+  &.dBtn-fit {
+    width: fit-content;
+  }
+  &.dBtn-flat {
+    background: transparent;
+    color: getColor('black');
+    &.dBtn-gray {
+      background: transparent;
+      color: getColor('black');
+      &:hover {
+        @media (any-hover: hover) {
+          color: getColor('darkGray');
+        }
+      }
+    }
+    &.dBtn-blue {
+      background: transparent;
+      color: getColor('black');
+      &:hover {
+        @media (any-hover: hover) {
+          color: getColor('blue');
+        }
+      }
+
+    }
+  }
+  &.dBtn-bgr {
+    -webkit-box-shadow: 4px 4px 13px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 13px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 13px 0px rgba(34, 60, 80, 0.2);
+    padding: 6px 15px;
+
+    &.dBtn-gray {
+      background: getColor('gray');
+      color: getColor('black');
+      &:hover {
+        @media (any-hover: hover) {
+          background: getColor('blue');
+          color: getColor('white');
+        }
+      }
+    }
+    &.dBtn-blue {
+      background: getColor('blue');
+      color: getColor('white');
+      &:hover {
+        @media (any-hover: hover) {
+          background: getColor('lightBlue');
+          color: getColor('white');
+        }
+      }
+
+    }
+  }
+}

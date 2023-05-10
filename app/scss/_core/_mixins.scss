@@ -1,0 +1,7 @@
+@mixin transition($obj, $val) {
+  -webkit-transition: $obj $val;
+  -moz-transition: $obj $val;
+  -ms-transition: $obj $val;
+  -o-transition: $obj $val;
+  transition: $obj $val;
+}
