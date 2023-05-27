@@ -13,6 +13,39 @@ $colors: (
   'lightRed': #e96060,
 );
 
+
+//colors
+
+//background
+$color-bgr-main: #ffffff;
+$color-bgr-blue: #2db2c0;
+$color-bgr-black: #2b2f32;
+$color-bgr-light-gray: #f0f0f0;
+$color-bgr-extra-light-gray: #f4f5f7;
+
+// buttons
+$color-btn-blue: #2db2c0;
+$color-btn-blue-hover: #48cad6;
+
+$color-btn-red: #c02b2b;
+$color-btn-red-hover: #e96060;
+
+// Text
+$color-text-black: #2d2d2d;
+$color-text-dark-gray: #2f2f2f;
+$color-text-gray: #999999;
+$color-text-blue: #2bb3c0;
+$color-text-white: #FFFFFF;
+$color-text-light-gray: #777e89;
+
+// borders
+$color-border-gray: #e7e7e7;
+$color-border-blue: #2db2c0;
+$color-border-white: #FFFFFF;
+
+
+
+
 // Данная функция получает цвет по названию.
 // Например background: getColor('black') !!!!
 

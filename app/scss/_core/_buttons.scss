@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
   @include transition(all, .5s);
   &.dBtn-fit {
     width: fit-content;
@@ -50,13 +51,47 @@
     &.dBtn-blue {
       background: getColor('blue');
       color: getColor('white');
+
       &:hover {
         @media (any-hover: hover) {
           background: getColor('lightBlue');
           color: getColor('white');
         }
       }
+    }
+    &.dBtn-red {
+      background: getColor('red');
+      color: getColor('white');
+      &:hover {
+        @media (any-hover: hover) {
+          background: getColor('lightRed');
+          color: getColor('white');
+        }
+      }
 
+    }
+  }
+}
+
+.icon {
+  &.icon-blue {
+    color: getColor('blue');
+  }
+  &.icon-black {
+    color: getColor('black');
+  }
+}
+
+.close-btn {
+  cursor: pointer;
+  @include transition(all, .5s);
+  i {
+    font-size: 25px;
+    @include transition(all, .5s);
+  }
+  &:hover {
+    i {
+      color: getColor('blue');
     }
   }
 }

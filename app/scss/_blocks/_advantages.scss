@@ -1,0 +1,82 @@
+.main-advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .section-title {
+    h2 {
+      font-family: "Montserrat",sans-serif;
+      margin-top: 0;
+      color: #1b1e25;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 34px;
+      text-align: center;
+    }
+  }
+  .pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .pill-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      -webkit-flex: 1 1 25%;
+      -moz-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+      flex: 1 1 25%;
+      margin-bottom: 50px;
+      .pill-icon {
+        width: 50px;
+        height: 50px;
+        padding-right: 20px;
+        position: relative;
+        img {
+          width: inherit;
+          object-fit: cover;
+        }
+
+      }
+      .pill-text {
+        padding-right: 50px;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
+  }
+  .btn-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .main-advantages {
+    .pills {
+      .pill-item {
+        -webkit-flex: 1 1 50%;
+        -moz-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-advantages {
+    .pills {
+      .pill-item {
+        -webkit-flex: 1 1 100%;
+        -moz-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

@@ -4,6 +4,16 @@
 @import "_core/_mixins";
 @import "_core/_buttons";
 @import "_core/_fonts";
+@import "_core/_inputs";
+
+@import "_blocks/_modal";
+@import "_blocks/_header";
+@import "_blocks/_footer";
+@import "_blocks/_banner";
+@import "_blocks/_advantages";
+@import "_blocks/_infographic";
+@import "_blocks/_services";
+@import "_blocks/_ask";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
@@ -20,4 +30,43 @@ html {
   background: getColor('white');
   top: 0;
   left: 0;
+}
+
+body {
+  // temp start
+  min-height: 1000px;
+  background: getColor('lightGray');
+  // temp end
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+
+  &._lock {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none
+  }
+}
+
+.main_page {
+  min-height: 1000px;
+}
+
+
+@media (max-width: 1200px) {
+  .main-banner {
+    padding-top: 50px;
+  }
 }

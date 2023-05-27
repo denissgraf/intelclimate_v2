@@ -1,0 +1,96 @@
+.main-services {
+  margin-bottom: 40px;
+  .section-title {
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+      color: #404040;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  .section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: -20px;
+    margin-right: -20px;
+    .service-item {
+      -webkit-flex: 1 1 33.3%;
+      -moz-flex: 1 1 33.3%;
+      -ms-flex: 1 1 33.3%;
+      flex: 1 1 33.3%;
+      margin: 10px;
+      height: 400px;
+      width: 33.3%;
+      position: relative;
+      .service-item__wrapper {
+        margin: 10px;
+        overflow: hidden;
+        height: 100%;
+        display: block;
+        position: relative;
+        @include transition(all, .5s);
+        .service-img {
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          img {
+            position: absolute;
+            object-fit: contain;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include transition(all, .5s);
+
+          }
+        }
+        .info-desc {
+          position: absolute;
+          bottom: 20px;
+          width: inherit;
+          background: black;
+          right: 0;
+          left: 0;
+          margin: 20px;
+          padding: 30px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          color: white;
+          background: rgba(0, 0, 0, 0.57);
+        }
+        &:hover {
+          @media (any-hover:hover) {
+            img {
+              transform: translateX(-50%) scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-services {
+    .section-wrapper {
+      flex-wrap: wrap;
+      .service-item {
+        -webkit-flex: 1 1 100%;
+        -moz-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        width: 100%;
+        .service-item__wrapper {
+          .service-img {
+            img {
+              height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}

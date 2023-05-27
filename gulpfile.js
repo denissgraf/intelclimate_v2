@@ -49,7 +49,7 @@ function startwatch() {
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
   watch('app/**/' + preprocessor + '/**/*', styles);
   watch(['app/html/*.html', 'app/parts/**/*.html'], joinHtml).on('change', browserSync.reload);
-  watch(['app/img/**/*', '!app/img/opt/*'], images);
+  watch(['app/img/**/*', '!app/images/*'], images);
 }
 
 
@@ -60,7 +60,7 @@ function cleanimg() {
 async function images() {
   imagecomp(
     "app/img/**/*", // Берём все изображения из папки источника
-    "app/img/opt/", // Выгружаем оптимизированные изображения в папку назначения
+    "app/images/", // Выгружаем оптимизированные изображения в папку назначения
     { compress_force: false, statistic: true, autoupdate: true }, false, // Настраиваем основные параметры
     { jpg: { engine: "mozjpeg", command: ["-quality", "75"] } }, // Сжимаем и оптимизируем изображеня
     { png: { engine: "pngquant", command: ["--quality=75-100", "-o"] } },

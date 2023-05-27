@@ -5,3 +5,11 @@
   -o-transition: $obj $val;
   transition: $obj $val;
 }
+
+@mixin borderRadius($val) {
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  -ms-border-radius: $val;
+  -o-border-radius: $val;
+  border-radius: $val;
+}
